@@ -1,0 +1,130 @@
+# 사이트 공통 설정
+# 배포 도메인 확정 후 BASE_URL 을 실제 도메인으로 변경하세요.
+BASE_URL = "https://www.jungnang-baro.example.com"
+
+BRAND = "바로GO"
+PHONE = "0508-202-4719"
+PHONE_DISPLAY = "0508-202-4719"
+
+# 푸터 제휴/제작 문의 — 오렌지 버튼 + 텔레그램 링크
+TELEGRAM_URL = "https://t.me/googleseolab"
+
+# 상단 메뉴 — 하위 메뉴에는 키워드를 반복하지 않고 지역명·역명만 표시한다.
+NAV = [
+    ("홈", "/", []),
+    ("중랑 출장마사지", "/massage/", [
+        ("출장마사지 안내", "/massage/#service"),
+        ("홈타이 안내", "/massage/#hometai"),
+        ("전지역 방문 안내", "/massage/#coverage"),
+        ("지하철역 인근 안내", "/massage/#stations"),
+        ("예약 가능 시간", "/massage/#hours"),
+        ("코스 선택 안내", "/massage/#course"),
+        ("이용 전 확인사항", "/massage/#check"),
+        ("위생·안전 안내", "/massage/#safety"),
+        ("자주 묻는 질문", "/massage/#faq"),
+    ]),
+    ("지역별 안내", "/seoul/jungnang-gu/", [
+        ("중랑구 전체", "/seoul/jungnang-gu/"),
+        ("면목동", "/seoul/jungnang-gu/myeonmok-dong/"),
+        ("상봉동", "/seoul/jungnang-gu/sangbong-dong/"),
+        ("중화동", "/seoul/jungnang-gu/junghwa-dong/"),
+        ("묵동", "/seoul/jungnang-gu/muk-dong/"),
+        ("망우동", "/seoul/jungnang-gu/mangu-dong/"),
+        ("신내동", "/seoul/jungnang-gu/sinnae-dong/"),
+    ]),
+    ("역세권 안내", "/seoul/jungnang-gu/station/", [
+        ("역 전체", "/seoul/jungnang-gu/station/"),
+        ("면목역", "/seoul/jungnang-gu/station/myeonmok-station/"),
+        ("사가정역", "/seoul/jungnang-gu/station/sagajeong-station/"),
+        ("용마산역", "/seoul/jungnang-gu/station/yongmasan-station/"),
+        ("상봉역", "/seoul/jungnang-gu/station/sangbong-station/"),
+        ("망우역", "/seoul/jungnang-gu/station/mangu-station/"),
+        ("중랑역", "/seoul/jungnang-gu/station/jungnang-station/"),
+        ("중화역", "/seoul/jungnang-gu/station/junghwa-station/"),
+        ("먹골역", "/seoul/jungnang-gu/station/meokgol-station/"),
+        ("봉화산역", "/seoul/jungnang-gu/station/bonghwasan-station/"),
+        ("신내역", "/seoul/jungnang-gu/station/sinnae-station/"),
+        ("양원역 인접 생활권", "/seoul/jungnang-gu/station/yangwon-nearby-area/"),
+    ]),
+    ("생활권 안내", "/seoul/jungnang-gu/area/", [
+        ("생활권 전체", "/seoul/jungnang-gu/area/"),
+        ("면목역·사가정 생활권", "/seoul/jungnang-gu/area/myeonmok-sagajeong/"),
+        ("용마산·면목동 생활권", "/seoul/jungnang-gu/area/yongmasan-myeonmok/"),
+        ("상봉터미널·상봉역 생활권", "/seoul/jungnang-gu/area/sangbong-terminal/"),
+        ("망우역·망우동 생활권", "/seoul/jungnang-gu/area/mangu-station/"),
+        ("중랑역·상봉 인접 생활권", "/seoul/jungnang-gu/area/jungnang-sangbong/"),
+        ("중화역·중화동 생활권", "/seoul/jungnang-gu/area/junghwa-station/"),
+        ("먹골역·묵동 생활권", "/seoul/jungnang-gu/area/meokgol-muk/"),
+        ("봉화산·신내동 생활권", "/seoul/jungnang-gu/area/bonghwasan-sinnae/"),
+        ("신내역·신내동 생활권", "/seoul/jungnang-gu/area/sinnae-station/"),
+        ("양원·망우 인접 생활권", "/seoul/jungnang-gu/area/yangwon-mangu/"),
+    ]),
+    ("테마별 안내", "/themes/", [
+        ("전체 테마", "/themes/"),
+        ("스웨디시", "/themes/swedish/"),
+        ("로미로미", "/themes/lomilomi/"),
+        ("타이마사지", "/themes/thai/"),
+        ("중국마사지", "/themes/chinese/"),
+        ("아로마테라피", "/themes/aroma/"),
+        ("홈케어", "/themes/homecare/"),
+        ("호텔식마사지", "/themes/hotel-style/"),
+        ("발마사지", "/themes/foot/"),
+        ("스포츠·경락", "/themes/sports/"),
+        ("스킨케어", "/themes/skincare/"),
+        ("왁싱", "/themes/waxing/"),
+        ("커플 관리", "/themes/couple/"),
+        ("24시간", "/themes/24hours/"),
+        ("수면 가능", "/themes/overnight/"),
+    ]),
+    ("코스안내", "/courses/", [
+        ("전체 코스", "/courses/"),
+        ("피로 회복 관리", "/courses/#recovery"),
+        ("아로마 관리", "/courses/#aroma"),
+        ("스포츠 관리", "/courses/#sports"),
+        ("홈타이 코스", "/courses/#hometai"),
+        ("커플·가족 방문 관리", "/courses/#couple"),
+        ("기업·단체 방문 관리", "/courses/#group"),
+        ("가격 안내", "/courses/#price"),
+        ("코스 선택 가이드", "/courses/#guide"),
+    ]),
+    ("예약안내", "/reservation/", [
+        ("예약 방법", "/reservation/#how"),
+        ("예약 가능 시간", "/reservation/#hours"),
+        ("방문 가능 장소", "/reservation/#place"),
+        ("결제 안내", "/reservation/#payment"),
+        ("변경·취소 안내", "/reservation/#change"),
+        ("예약 전 체크사항", "/reservation/#check"),
+    ]),
+    ("이용가이드", "/guide/", [
+        ("처음 이용하시는 분", "/guide/#first"),
+        ("방문 전 준비사항", "/guide/#prepare"),
+        ("위생 및 안전 기준", "/guide/#hygiene"),
+        ("홈타이 이용 가이드", "/guide/#hometai"),
+        ("관리 후 주의사항", "/guide/#after"),
+        ("금지행위 안내", "/guide/#prohibited"),
+        ("이용 FAQ", "/guide/#faq"),
+    ]),
+    ("매거진", "/magazine/", [
+        ("전체 글", "/magazine/"),
+        ("마사지 비교 가이드", "/magazine/swedish-vs-thai/"),
+        ("처음 이용 가이드", "/magazine/first-time-guide/"),
+        ("수면과 마사지", "/magazine/sleep-and-massage/"),
+        ("운동 후 회복", "/magazine/post-workout-timing/"),
+        ("어깨·목 결림 관리", "/magazine/neck-shoulder-care/"),
+        ("부모님 선물 가이드", "/magazine/parents-gift/"),
+    ]),
+    ("후기", "/reviews/", [
+        ("전체 후기", "/reviews/"),
+        ("지역별 후기", "/reviews/#area"),
+        ("역세권 후기", "/reviews/#station"),
+        ("후기 작성 안내", "/reviews/#write"),
+    ]),
+    ("고객센터", "/support/", [
+        ("공지사항", "/support/#notice"),
+        ("자주 묻는 질문", "/support/#faq"),
+        ("1:1 문의", "/support/#contact"),
+        ("제휴·기업 문의", "/support/#biz"),
+        ("개인정보처리방침", "/support/privacy/"),
+        ("이용약관", "/support/terms/"),
+    ]),
+]
