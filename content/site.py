@@ -8,6 +8,14 @@ PHONE_DISPLAY = "0508-202-4719"
 # 푸터 제휴/제작 문의 — 오렌지 버튼 + 텔레그램 링크
 TELEGRAM_URL = "https://t.me/googleseolab"
 
+# IndexNow 키 — 빌드 시 루트에 <KEY>.txt 로 생성되고, tools/indexnow.py 가 사용한다.
+# Bing·Yandex·Seznam·Naver(IndexNow 참여 검색엔진)에 즉시 색인 통보용.
+INDEXNOW_KEY = "8f16aa0af4d44113a67da01ed86ff51d591442a8b9fb472cb0697f2919563a40"
+
+# RSS 피드 메타
+RSS_TITLE = "바로GO 중랑 출장마사지·홈타이 안내"
+RSS_DESC = "중랑구 전지역 방문 출장마사지·홈타이 지역·역세권·생활권 안내 업데이트"
+
 # 상단 메뉴 — 하위 메뉴에는 키워드를 반복하지 않고 지역명·역명만 표시한다.
 NAV = [
     ("홈", "/", []),

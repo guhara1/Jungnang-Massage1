@@ -1,4 +1,17 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Daumoa
+Allow: /
+
 Sitemap: https://jungnang-massage1.pages.dev/sitemap.xml
+Sitemap: https://jungnang-massage1.pages.dev/rss.xml

@@ -205,7 +205,7 @@ PAGE = {
     "desc": "중랑구 출장마사지·홈타이 예약 전 면목동, 상봉동, 망우동, 신내동, 중화동 생활권을 확인하세요.",
     "h1": "중랑구 출장마사지 · 중랑구 홈타이 지역별 예약 안내",
     "body": _BODY,
-    "extra_head": _JSONLD,
+    "extra_head": '<meta name="naver-site-verification" content="3db74dc791f93add478bde2af3118bdb4fd298ec">\n' + _JSONLD,
     "breadcrumb": [],
     "hero": _HERO,
 }
